@@ -235,13 +235,13 @@ section{
 .contact .container{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
 .contact .container .img{
     width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 .contact .title .title_text{
     color: #fff;
