@@ -382,6 +382,19 @@ section{
         margin-top: 20px;
         margin-bottom: 30px;
     }
+    .contact .container {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contactform {
+        width: 100%;
+    }
+    .contact .container .img {
+        justify-content: center;
+    }
+    .contact .container .img img {
+        width: 150%;
+    }
 }
 @media (max-width: 480px)
 {
