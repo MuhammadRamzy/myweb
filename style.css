@@ -315,9 +315,9 @@ section{
     }
     header .navigation.active{
         width: 100%;
-        height: calc(100% - 68px);
+        height: calc(100% - 60px);
         position: fixed;
-        top: 68px;
+        top: 60px;
         left: 0;
         display: flex;
         justify-content: center;
