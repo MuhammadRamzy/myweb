@@ -93,6 +93,7 @@ header.sticky .navigation li a{
 }
 header.sticky .menutoggle{
     color: #fff;
+    outline: none;
 }
 header .navigation li a:hover{
     color: rgb(76, 76, 239);
@@ -338,9 +339,6 @@ section{
         font-weight: 300;
         transition: all 0.3s;
     }
-    header .navigation li a:active{
-        letter-spacing: 1em;
-    }
     .menutoggle{
         position: relative;
         width: 30px;
@@ -349,7 +347,6 @@ section{
         margin: 10px;
         font-size: 30px;
         cursor: pointer;
-        outline: none;
     }
     header.sticky .menutoggle{
         color: #111;
