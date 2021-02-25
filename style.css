@@ -311,11 +311,8 @@ section{
         padding: 5px 10px;
     }
     header .navigation{
-        display: none;
-    }
-    header .navigation.active{
         width: 100%;
-        height: calc(100% - 60px);
+        height: 100%;
         position: fixed;
         top: 60px;
         left: 0;
@@ -324,6 +321,11 @@ section{
         align-items: center;
         flex-direction: column;
         background: #fff;
+        clip-path: circle(0%);
+        transition: 1s ease;
+    }
+    header .navigation.active{
+        clip-path: circle(110%);
     }
     header .navigation li{
         list-style: none;
