@@ -336,6 +336,10 @@ section{
         color: #111;
         font-size: 1.6em;
         font-weight: 300;
+        transition: all 0.3s;
+    }
+    header .navigation li a:active{
+        letter-spacing: 1em;
     }
     .menutoggle{
         position: relative;
