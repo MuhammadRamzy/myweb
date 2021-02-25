@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
     <title>Muhammad Ramzy</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon.jpg" sizes="16x16" type="image/jpg" />
@@ -32,7 +33,7 @@
       <div class="content">
         <h2>Muhammad Ramzy<span>.</span></h2>
         <p>
-          I am a Middle School Student who likes to do web Designing and
+          I am a Middle School Student who likes to do Web Designing and
           Development <br />
           I am trying to make a career off of it.
         </p>
@@ -46,7 +47,7 @@
           <h2 class="title_text"><span>A</span>bout</h2>
           <p>
             Now studiying in Crescent HSS Vanimel. I specializes in python
-            coding and uses Node.JS for web developing For works see <a href="#myworks" style="text-decoration: none;color: rgb(76, 76, 239);">Click Here..</a>
+            coding and uses Node.JS for web developing <br>For see my works <a href="#myworks" style="text-decoration: none;color: rgb(76, 76, 239);">Click Here..</a>
             <br /><br />
             Quests to learn<br /><hr>
               Completed Webdesign Challenge by Crossroads. And I completed Web Design
@@ -62,7 +63,7 @@
             <br />
             I have been Learning programming and since my childhood days. I have
             been learning to program since my early ages and my quest to acquire
-            knowledge has not stopped and will never end :)
+            knowledge has not stopped and will never end : )
             <br />
           </p>
         </div>
@@ -183,29 +184,31 @@
     </section>
 
     <section class="contact" id="contact">
-      <div class="title">
-        <h2 class="title_text"><span>C</span>ontact</h2>
-      </div>
-      <div class="container">
-        <div class="contactform">
-          <h3>Send Message</h3>
-          <div class="inputbox">
-            <input type="text" placeholder="Name" />
+      <form id="submit-form" action="">
+        <div class="title">
+          <h2 class="title_text"><span>C</span>ontact</h2>
+        </div>
+        <div class="container">
+          <div class="contactform">
+            <h3>Send Message</h3>
+            <div class="inputbox">
+              <input type="text" placeholder="Name" name="name"/>
+            </div>
+            <div class="inputbox">
+              <input type="email" placeholder="Email" name="email"/>
+            </div>
+            <div class="inputbox">
+              <textarea placeholder="Message" name="message"></textarea>
+            </div>
+            <div class="inputbox">
+              <input type="submit" placeholder="Send" />
+            </div>
           </div>
-          <div class="inputbox">
-            <input type="email" placeholder="Email" />
-          </div>
-          <div class="inputbox">
-            <textarea placeholder="Message"></textarea>
-          </div>
-          <div class="inputbox">
-            <input type="submit" placeholder="Send" />
+          <div class="img">
+            <img src="contact.png" alt="Oops Something went wrong" />
           </div>
         </div>
-        <div class="img">
-          <img src="contact.png" alt="Oops Something went wrong" />
-        </div>
-      </div>
+      </form>
     </section>
 
     <div class="copyrighttext">
@@ -232,5 +235,30 @@
       src="https://kit.fontawesome.com/a79c4beae1.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $("#submit-form").submit((e)=>{
+          e.preventDefault()
+          $.ajax({
+              cors: true ,
+              contentType:'application/json',
+              secure: true,
+              headers: {
+                'Access-Control-Allow-Origin': '*',
+              },
+              url:"https://script.google.com/macros/s/AKfycbw2TcooMjO5oj1A4ASQiIqn0yey54Fc9B99-VkHWc06uIynwzwpCD1JEA/exec",
+              data:$("#submit-form").serialize(),
+              method:"post",
+              success:function (response){
+                  alert("Form submitted successfully")
+                  window.location.reload()
+                  //window.location.href="https://google.com"
+              },
+              error:function (err){
+                  alert("Something Error")
+  
+              }
+          })
+      })
+  </script>
   </body>
 </html>

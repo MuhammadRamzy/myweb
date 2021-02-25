@@ -209,6 +209,7 @@ section{
     border: 15px solid #fff;
     border-radius: 10px;
     box-shadow: 0 5px 35px rgba(106, 148, 190, 0.368);
+    cursor: pointer;
 }
 .myworks .content .box .imgbx{
     position: relative;
@@ -400,11 +401,29 @@ section{
     .contact .container .img img {
         width: 150%;
     }
+    .copyrighttext p {
+        font-size: 14px;
+    }
 }
 @media (max-width: 480px)
 {
     .banner .content h2{
         font-size: 2.2em;
         color: #fff;
+    }
+    .banner .content p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 1200px)
+{
+    .contact .container .img img {
+        width: 100%;
+    }
+}
+@media (max-width: 1500px)
+{
+    .contact .container .img img {
+        width: 100%;
     }
 }
