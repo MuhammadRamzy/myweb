@@ -321,11 +321,11 @@ section{
         align-items: center;
         flex-direction: column;
         background: #fff;
-        clip-path: circle(0%);
+        clip-path: circle(0% at 5% 0%);
         transition: 1s ease;
     }
     header .navigation.active{
-        clip-path: circle(110%);
+        clip-path: circle(110% at 50% 50%);
     }
     header .navigation li{
         list-style: none;
