@@ -345,6 +345,7 @@ section{
         margin: 10px;
         font-size: 30px;
         cursor: pointer;
+        outline: none;
     }
     header.sticky .menutoggle{
         color: #111;
