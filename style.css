@@ -167,6 +167,7 @@ section{
     border: 15px solid #fff;
     border-radius: 10px;
     box-shadow: 0 5px 35px rgba(106, 148, 190, 0.368);
+    cursor: pointer;
 }
 .experience .content .box .imgbx{
     position: relative;
@@ -292,6 +293,10 @@ section{
     font-weight: 500;
     border: none;
     cursor: pointer;
+    transition: all 0.5s;
+}
+.contactform .inputbox input[type="submit"]:hover{
+    letter-spacing: 3px;
 }
 .copyrighttext{
     padding: 30px 40px;
