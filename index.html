@@ -184,7 +184,7 @@
     </section>
 
     <section class="contact" id="contact">
-      <form id="submit-form" action="">
+      <form id="submit-form" method="POST" action="https://script.google.com/macros/s/AKfycbw2TcooMjO5oj1A4ASQiIqn0yey54Fc9B99-VkHWc06uIynwzwpCD1JEA/exec">
         <div class="title">
           <h2 class="title_text"><span>C</span>ontact</h2>
         </div>
@@ -235,7 +235,7 @@
       src="https://kit.fontawesome.com/a79c4beae1.js"
       crossorigin="anonymous"
     ></script>
-    <script>
+    <!-- <script>
       $("#submit-form").submit((e)=>{
           e.preventDefault()
           $.ajax({
@@ -255,10 +255,10 @@
               },
               error:function (err){
                   alert("Something Error")
-  
+                  console.log(err);
               }
           })
       })
-  </script>
+  </script> -->
   </body>
 </html>
