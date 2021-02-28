@@ -30,12 +30,14 @@ p{
 .banner .content h2 {
     font-size: 5em;
     color: #fff;
+    text-shadow: 4px 4px 2px rgb(59, 59, 255);
 }
 .menutoggle{
     color: rgb(36, 36, 36);
 }
 .banner .content h2 span{
     color: rgb(76, 76, 239);
+    text-shadow: none;
 }
 .banner .content h2 p{
     font-size: 1em;
@@ -44,7 +46,7 @@ p{
 .btn {
     font-size: 1em;
     color: #fff;
-    background-color: rgb(76, 76, 239);
+    background-color: rgb(59, 59, 255);
     display: inline-block;
     padding: 10px 30px;
     margin-top: 20px;
@@ -96,7 +98,7 @@ header.sticky .menutoggle{
     outline: none;
 }
 header .navigation li a:hover{
-    color: rgb(76, 76, 239);
+    color: rgb(59, 59, 255);
 }
 section{
     padding: 100px;
@@ -117,7 +119,7 @@ section{
     font-weight: 300;
 }
 .title_text span{
-    color: rgb(76, 76, 239);
+    color: rgb(59, 59, 255);
     font-weight: 700;
     font-size: 1.5em;
 }
@@ -283,7 +285,7 @@ section{
 .contactform .inputbox input[type="submit"]{
     font-size: 1em;
     color: #fff;
-    background-color: rgb(76, 76, 239);
+    background-color: rgb(59, 59, 255);
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
@@ -307,7 +309,7 @@ section{
     color: #111;
 }
 .copyrighttext a{
-    color: rgb(76, 76, 239);
+    color: rgb(59, 59, 255);
     text-decoration: none;
 }
 
@@ -413,7 +415,7 @@ section{
 @media (max-width: 480px)
 {
     .banner .content h2{
-        font-size: 2.2em;
+        font-size: 2em;
         color: #fff;
     }
     .banner .content p {
