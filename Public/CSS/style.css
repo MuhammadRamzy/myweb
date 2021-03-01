@@ -21,7 +21,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: bg 10s infinite;
+    animation: bg 5s infinite;
     overflow: hidden;
 }
 @keyframes bg{
