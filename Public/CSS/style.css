@@ -534,3 +534,15 @@ section{
     transform: skewY(15deg);
     transform-origin: top right;
 }
+@media (max-width: 350px){
+    .banner .content h2 {
+        font-size: 1.7em;
+        color: #fff;
+    }
+}
+@media (max-width: 380px){
+    .banner .content h2 {
+        font-size: 1.7em;
+        color: #fff;
+    }
+}
