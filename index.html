@@ -11,6 +11,7 @@
     <meta name="description" content="I am a Middle School Student who likes to do Web Designing and Development. And this is my personal website . For more info about me Check this website.">
     <meta name="author" content="Muhammad Ramzy">
     <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -48,7 +49,7 @@
 
     <section class="about" id="about">
       <div class="row">
-        <div class="col50">
+        <div class="col50" data-aos="zoom-in-right" data-aos-duration="1500">
           <h2 class="title_text"><span>A</span>bout</h2>
           <p>
             Now studiying in Crescent HSS Vanimel. I specializes in python
@@ -73,7 +74,7 @@
           </p>
         </div>
         <div class="col50">
-          <div class="imgbox">
+          <div class="imgbox" data-aos="zoom-in-left" data-aos-duration="1500">
             <img src="Public/Images/guy.png" alt="Oops Something went wrong" />
           </div>
         </div>
@@ -84,7 +85,7 @@
       <div class="title">
         <h2 class="title_text"><span>E</span>xperience</h2>
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up" data-aos-duration="1500">
         <div class="box">
           <div class="imgbx">
             <img src="Public/Images/coding.png" alt="" />
@@ -169,7 +170,7 @@
         <h2 class="title_text"><span>M</span>y Works</h2>
       </div>
       <div class="content">
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="1500">
           <div class="imgbx">
             <img src="Public/Images/coming-soon-3080102_640.png" alt="Comeing Soon" />
           </div>
@@ -177,7 +178,7 @@
             <h3>Cooming Soon</h3>
           </div>
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="1500">
           <div class="imgbx">
             <img src="Public/Images/coming-soon-3080102_640.png" alt="Comeing Soon" />
           </div>
@@ -185,7 +186,7 @@
             <h3>Cooming Soon</h3>
           </div>
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="1500">
           <div class="imgbx">
             <img src="Public/Images/coming-soon-3080102_640.png" alt="Comeing Soon" />
           </div>
@@ -193,7 +194,7 @@
             <h3>Cooming Soon</h3>
           </div>
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="1500">
           <div class="imgbx">
             <img src="Public/Images/coming-soon-3080102_640.png" alt="Comeing Soon" />
           </div>
@@ -210,7 +211,7 @@
           <h2 class="title_text"><span>C</span>ontact</h2>
         </div>
         <div class="container">
-          <div class="contactform">
+          <div class="contactform" data-aos="fade-right" data-aos-duration="1500">
             <h3>Send Message</h3>
             <div class="inputbox">
               <input type="text" placeholder="Name" name="name" required/>
@@ -225,7 +226,7 @@
               <input type="submit" placeholder="Send" value="Send">
             </div>
           </div>
-          <div class="img">
+          <div class="img" data-aos="zoom-in" data-aos-duration="1500">
             <img src="Public/Images/contact.png" alt="Oops Something went wrong" />
           </div>
         </div>
@@ -233,6 +234,12 @@
     </section>
 
     <div class="copyrighttext">
+      <!-- <div class="socialMedia">
+        <i class="fas fa-phone-alt items"></i>
+        <i class="fab fa-whatsapp items"></i>
+        <i class="fab fa-discord items"></i>
+      </div>
+      <hr> -->
       <p>
         ©️ Copyright of <a href="#home">Muhammad Ramzy</a> . All Right are
         Reserved
@@ -292,6 +299,10 @@
       skewedOne.style.transform = "skewY("+value1+"deg)";
       skewedTwo.style.transform = "skewY("+value2+"deg)";
     })
+  </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
   </body>
 </html>

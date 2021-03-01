@@ -21,8 +21,19 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(36, 36, 36);
+    animation: bg 10s infinite;
     overflow: hidden;
+}
+@keyframes bg{
+    0%{
+        background-color: rgb(36, 36, 36)
+    }
+    50%{
+        background-color: rgb(0, 0, 0)
+    }
+    100%{
+        background-color: rgb(36, 36, 36)
+    }
 }
 .banner .content{
     max-width: 900px;
@@ -479,6 +490,11 @@ section{
     .contact .container .img img {
         width: 150%;
     }
+    .copyrighttext{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .copyrighttext p {
         font-size: 14px;
     }
@@ -545,4 +561,21 @@ section{
         font-size: 1.7em;
         color: #fff;
     }
+}
+
+.copyrighttext .socialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(31, 31, 31);
+    font-size: 28px;
+    text-decoration: none;
+    letter-spacing: 90px;
+}
+.copyrighttext .socialMedia .items {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.copyrighttext hr{
+    width: 100%;
 }
