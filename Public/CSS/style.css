@@ -31,6 +31,24 @@ p{
     font-size: 5em;
     color: #fff;
     text-shadow: 4px 4px 0px rgb(71, 71, 255);
+    animation: textDance 0.5s infinite;
+}
+@keyframes textDance{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(0.3deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-0.3deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
 }
 .menutoggle{
     color: rgb(36, 36, 36);
