@@ -483,11 +483,16 @@ section{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
     }
     .copyrighttext p {
         font-size: 14px;
     }
+    .copyrighttext .socialMedia{
+        letter-spacing: 40px;
+    }
 }
+
 @media (max-width: 480px)
 {
     .banner .content h2{
@@ -496,6 +501,9 @@ section{
     }
     .banner .content p {
         font-size: 15px;
+    }
+    .copyrighttext .socialMedia{
+        letter-spacing: 40px;
     }
 }
 @media (max-width: 1200px)
@@ -544,11 +552,17 @@ section{
         font-size: 1.7em;
         color: #fff;
     }
+    .copyrighttext .socialMedia{
+        letter-spacing: 40px;
+    }
 }
 @media (max-width: 380px){
     .banner .content h2 {
         font-size: 1.7em;
         color: #fff;
+    }
+    .copyrighttext .socialMedia{
+        letter-spacing: 40px;
     }
 }
 
