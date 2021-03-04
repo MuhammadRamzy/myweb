@@ -269,19 +269,12 @@
       $("#submit-form").submit((e)=>{
           e.preventDefault()
           $.ajax({
-              cors: true ,
-              contentType:'application/json',
-              secure: true,
-              headers: {
-                'Access-Control-Allow-Origin': '*',
-              },
               url:"https://script.google.com/macros/s/AKfycbw2TcooMjO5oj1A4ASQiIqn0yey54Fc9B99-VkHWc06uIynwzwpCD1JEA/exec",
               data:$("#submit-form").serialize(),
               method:"post",
               success:function (response){
-                  alert("Form submitted successfully")
+                  alert("Your Message send successfully")
                   window.location.reload()
-                  //window.location.href="https://google.com"
               },
               error:function (err){
                   alert("Something Error")

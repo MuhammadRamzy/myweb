@@ -488,9 +488,6 @@ section{
     .copyrighttext p {
         font-size: 14px;
     }
-    .copyrighttext .socialMedia{
-        letter-spacing: 40px;
-    }
 }
 
 @media (max-width: 480px)
@@ -501,9 +498,6 @@ section{
     }
     .banner .content p {
         font-size: 15px;
-    }
-    .copyrighttext .socialMedia{
-        letter-spacing: 40px;
     }
 }
 @media (max-width: 1200px)
@@ -552,33 +546,27 @@ section{
         font-size: 1.7em;
         color: #fff;
     }
-    .copyrighttext .socialMedia{
-        letter-spacing: 40px;
-    }
 }
 @media (max-width: 380px){
     .banner .content h2 {
         font-size: 1.7em;
         color: #fff;
     }
-    .copyrighttext .socialMedia{
-        letter-spacing: 40px;
-    }
 }
 
 .copyrighttext .socialMedia{
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     color: rgb(31, 31, 31);
     font-size: 28px;
     text-decoration: none;
-    letter-spacing: 90px;
 }
-.copyrighttext .socialMedia .items {
+/* .copyrighttext .socialMedia .items {
     margin-bottom: 10px;
     cursor: pointer;
-}
+} */
 .copyrighttext hr{
     width: 100%;
 }
