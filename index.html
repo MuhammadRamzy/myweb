@@ -208,7 +208,7 @@
     </section>
 
     <section class="contact" id="contact">
-      <form id="submit-form" method="POST">
+      <form id="submit-form" action="">
         <div class="title">
           <h2 class="title_text"><span>C</span>ontact</h2>
         </div>
@@ -266,22 +266,42 @@
       crossorigin="anonymous"
     ></script>
     <script>
+      // $("#submit-form").submit((e)=>{
+      //     e.preventDefault()
+      //     $.ajax({
+      //       contentType: 'application/json',
+      //         url:"https://script.google.com/macros/s/AKfycbw2TcooMjO5oj1A4ASQiIqn0yey54Fc9B99-VkHWc06uIynwzwpCD1JEA/exec",
+      //         data:$("#submit-form").serialize(),
+      //         method:"POST",
+      //         success:function (response){
+      //             alert("Your Message send successfully")
+      //             window.location.reload()
+      //         },
+      //         error:function (err){
+      //             alert("Something Error")
+      //             console.log(err);
+      //         }
+      //     })
+      // })
       $("#submit-form").submit((e)=>{
-          e.preventDefault()
-          $.ajax({
-              url:"https://script.google.com/macros/s/AKfycbw2TcooMjO5oj1A4ASQiIqn0yey54Fc9B99-VkHWc06uIynwzwpCD1JEA/exec",
-              data:$("#submit-form").serialize(),
-              method:"post",
-              success:function (response){
-                  alert("Your Message send successfully")
-                  window.location.reload()
-              },
-              error:function (err){
-                  alert("Something Error")
-                  console.log(err);
-              }
-          })
-      })
+            e.preventDefault()
+            $.ajax({
+              crossDomain: true,
+              dataType: 'json',
+                url:"https://script.google.com/macros/s/AKfycbw2TcooMjO5oj1A4ASQiIqn0yey54Fc9B99-VkHWc06uIynwzwpCD1JEA/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Your Message Submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
   </script>
   <script>
     const skewedOne = document.querySelector('.skewedOne');
