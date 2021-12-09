@@ -173,7 +173,7 @@ section {
 .experience .content {
   display: flex;
   justify-content: center;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
   margin-top: 40px;
 }
